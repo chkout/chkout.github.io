@@ -1,7 +1,143 @@
 <!DOCTYPE html>
 <html>
+<title>Chkout</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Raleway", Normal, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway";
+    letter-spacing: 5px;
+}
+</style>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide"><i class="fa fa-shopping-cart"></i> CHKOUT</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#retail" class="w3-bar-item w3-button">RETAIL</a>
+      <a href="#mission" class="w3-bar-item w3-button">DEMO</a>
+      <a href="#offering" class="w3-bar-item w3-button">OFFERING</a>
+      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#retail" onclick="w3_close()" class="w3-bar-item w3-button">RETAIL</a>
+  <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
+  <a href="#offering" onclick="w3_close()" class="w3-bar-item w3-button">OFFERING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+    
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="images/chkout-landing.png" alt="Chkout landing page" width="1600" height="800">
+  <div class="w3-display-middle w3-padding-large w3-opacity">
+    <h7>Chkout</h7>
+  </div>
+</header>
+<hr>
+  <!-- Retail Section -->
+<div class="w3-container" style="padding:128px 16px" id="retail">
+  <h1 class="w3-center">Retail is Changing</h1>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+<div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-bar-chart w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Turbulent Market</p>
+       <p class="w3-large">In 2017,  nearly 7,000 major stores  had a  closing announcement.  However, online retail had a great year, and larger retailers show promising signs of growth
+                    <br><i>Source:<a href="https://www.fungglobalretailtech.com/news/weekly-store-openings-closures-tracker-2018-23-hudsons-bay-co-close-10-lord-taylor-stores/"> FRT.</a></i></p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Experience is King</p>
+        <p class="w3-large w3-text-grey w3-hide-medium">Today’s consumers are more focused on the overall shopping experience. Experience-based retailers are powering ahead in terms of customer growth and conversion rates. 
+                    <br><i>Source:<a href="https://www.pwc.com/ca/en/industries/retail-consumer/consumer-insights.html?google-adwords-generic-fy18"> PWC </a></i></p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-home w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Skyrocketing Real Estate Costs</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Commercial real estate costs are increasing rapidly on an annual basis in major cities worldwide.</p>
+    </div>
+  </div>
+</div>
+    </div>
+  
+  <hr>
+  
+  <!-- Our Mission -->
+
+<div class="w3-container" style="padding:128px 40px" id="demo">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h1>Our mission</h1>
+      <h3>To create the most engaging customer experience for retail.</h3>
+    </div>
+    <div class="w3-col m6">
+     <iframe src="https://player.vimeo.com/video/277722403" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+    
+  <!-- Offering Section -->
+<div class="w3-container" style="padding:128px 16px" id="retail">
+  <h1 class="w3-center">Our Offering</h1>
+     <h2 class="w3-center">To create the most engaging cusomter experience for retail</h2>
+    <br>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+<div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-street-view w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Infinite Showroom Space</p>
+        <p class="w3-large">Showcase your tents at a campsite. Display your leather couch in a nice cigar lounge. All of this without having to invest in more space. The environment plays a huge part in showcasing your product, so why compromise?</p><br>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Compelling Experience</p>
+        <p class="w3-large w3-text-grey w3-hide-medium">Use storytelling and narrative to build an emotional connection with your customers. Create compelling virtual experiences that showcase both the product and the experience behind it.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-line-chart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Powerful Analytics</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Access in-depth insights into consumer shopping behaviour. Tailor experiences to each type of customer and fine-tune your product offerings for maximum conversion</p>
+    </div>
+  </div>
+</div>
+    </div> 
+<hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+<div class="w3-col l6 w3-padding-large">
+    <h1>Contact</h1><br>
+    <h4>We are looking for partners, collaborators, and investors to help us build a new generation of retail experiences.</h4>
+    <br>
+    <p><a href="mailto:shopin@thecdm.ca" class="w3-button w3-black"><i class="fa fa-envelope"> </i> Chkout</a></p>
+    </div>
+     <div class="w3-col m6">
+      <!--<img class="w3-image w3-round-large" src= "images/chkout_team.png" alt="Chkout Team" width="500" height="250"> -->
+    </div>
+    </div>
+<!-- End page content -->
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+</footer>
+
 </body>
 </html>
