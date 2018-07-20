@@ -5,11 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body {font-family: "Raleway", Normal, Serif;}
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Raleway";
-    letter-spacing: 5px;
+body,h1,h2,h3,h4,h5,h6,h7 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/chkout-landing.png");
+    min-height: 100%;
 }
 </style>
 <body>
@@ -42,13 +50,23 @@ h1,h2,h3,h4,h5,h6 {
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
     
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="images/chkout-landing.png" alt="Chkout landing page" width="1600" height="800">
-  <div class="w3-display-middle w3-padding-large w3-opacity">
-    <h7>Chkout</h7>
-  </div>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-center w3-text-white" style="padding:48px">
+      <span class="w3-display-middle w3-padding-large w3-opacity"><h7>Chkout</h7></span><br>
+  </div> 
+    
+<!-- Social     
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> --> 
 </header>
+    
 <hr>
   <!-- Retail Section -->
 <div class="w3-container" style="padding:128px 16px" id="retail">
